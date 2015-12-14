@@ -1,0 +1,43 @@
+# c# class 
+snippet class Class 
+	using System;
+	using System.Collections.Generic;
+	
+	namespace ${1:MyNamespace} {
+		public class ${2:MyClass} {
+			public $2() {
+				$0
+			}
+		}	
+	}	
+# c# interface
+snippet interface Interface
+	namespace ${1:MyNamespace} {
+		public interface ${2:MyInterface} {
+			$0
+		}	
+	}
+# c# public method
+snippet pme Public Method
+	public ${1:MyReturnType} ${2:MyName}(${3:MyArgs}) {
+		$0
+	}
+# Xunit test class
+snippet xtestclass Xunit test class
+	using Xunit;
+	using System;
+
+	namespace ${1:MyNamespace} {
+		public class ${2:MyClass} {
+			
+		}
+	}	
+# Xunit test method
+snippet xtest Xunit test
+	[Fact]
+	public void ${1:MyMethod}() {
+		// Arrange
+		// Act
+		// Assert
+	}
+
