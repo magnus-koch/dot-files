@@ -16,3 +16,5 @@ function SwitchBuffer()
 endfunction
 
 nmap <Tab> :call SwitchBuffer()<CR>
+
+inoremap jk <ESC>
